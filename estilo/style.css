@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Rokkitt & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Pacifico & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: #1C0118;
+    --cor02: #881BA6;
+    --cor03: #F2CB05;
+    --cor04: #746A58;
+    --cor05: #989FCE;
+
+    --fonte-titulos: 'Rokkitt', serifa;
+    --fonte-padrao: 'Pacifico', cursiva;
+    --fonte-curso: 'Sriracha', cursiva;
+    --fonte-curso02:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte-curso);
+
+}
+
+header {
+    background-color: var(--cor01);
+    color: var(--cor03);
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-titulos);
+    font-size: 6vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+    color: white;
+}
+
+.principal {
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: white;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 40px;
+    padding-left: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 2.3vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 46, 46);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+}
+
+section.imagem > h2 {
+    color: white;
+}
+
+section.imagem > p {
+    margin-top: 25px;
+    padding: 5px;
+    background-image: linear-gradient(90deg, #881ba650 10%, #881ba600 90%);
+    width: 500px;
+    border-radius: 10px;
+}
+
+section > p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section#egito {
+    background-image: url("../imagens/background002.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#bruxa {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2{
+    color: var(--cor01);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+    padding-bottom: 10px;
+    font-family: var(--fonte-titulos);
+    font-size: 3vw;
+    font-variant: small-caps;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
